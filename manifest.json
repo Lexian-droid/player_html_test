@@ -1,7 +1,7 @@
 {
-  "name": "Radio Player",
-  "short_name": "Radio Player",
-  "description": "Instale nosso aplicativo e nos ouça onde quer que você esteja.",
+  "name": "Jailson Webradio",
+  "short_name": "Jailson Webradio",
+  "description": "Música sem Gospel sem parar!",
   "icons": [
     {
       "src": "assets/jailson_cover.png",
@@ -50,8 +50,8 @@
   "related_applications": [
     {
       "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.jailsonwr.app",
-      "id": "com.jailsonwr.app"
+      "url": "https://play.google.com/store/apps/details?id=com.jbcast.jwradio",
+      "id": "com.jbcast.jwradio"
     }
   ]
 }
