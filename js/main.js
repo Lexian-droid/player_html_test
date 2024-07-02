@@ -853,12 +853,6 @@
                           }
                   });
           }
-          window.addEventListener('load', () => {
-            const playButton = document.querySelector(".player-button-play");
-            if (playButton) {
-              playButton.click(); 
-            }
-          });
   }
   initApp();
 })();
