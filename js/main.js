@@ -853,6 +853,9 @@
                           }
                   });
           }
+          window.addEventListener('load', () => {
+                  play(audio); 
+          });
   }
   initApp();
 })();
