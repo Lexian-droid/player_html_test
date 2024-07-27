@@ -89,7 +89,17 @@ This project displays information about songs playing on Icecast/Shoutcast radio
 
  ```
 
-3. Open The img folder and add your logo named "cover.png"
+
+   **Explanation:**
+
+   * **Required fields:** `name`, `hash`, `description`, `logo`, `album`, `cover`, `stream_url`, `server` 
+   * **Optional fields:** 
+     * You can leave fields like  `api`, `tv_url`, `program`, `social`, `apps` empty or comment them out (`//`) if they are not applicable to your radio station.
+     * Within the `apps` object, you can leave the `android` or `ios` fields empty (`""`) or comment them out  (`//`) if you don't have app links.
+    
+       
+
+3. Open The assets folder and add your logo named "cover.png"
 
 
 4. Just put the files in your server or use Free Hosting
