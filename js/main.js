@@ -879,23 +879,16 @@
                         </div>`;
 
 
-    const audioPopup = document.getElementById('audio-popup');
-        const startAudioButton = document.getElementById('start-audio');
-
-        function showPopupAndPlay() {
-            audioPopup.style.opacity = 1;  // Torna o overlay visível
-            audioPopup.style.pointerEvents = 'auto'; // Permite cliques no modal
-        }
-
-        startAudioButton.addEventListener('click', () => {
-            audioPopup.style.opacity = 0;  // Esconde o overlay
-            audioPopup.style.pointerEvents = 'none';  // Impede cliques no modal
-            handlePlayPause(); 
-        });
-
         window.addEventListener("DOMContentLoaded", () => {
             document.body.classList.remove("preload");
-            showPopupAndPlay(); 
+            // Adiciona o event listener para iniciar o audio após primeiro click na tela
+            let hasClicked = false;
+            document.body.addEventListener('click', () => {
+                if (!hasClicked && !audio.playing) {
+                    handlePlayPause();
+                    hasClicked = true;
+                }
+            });
         });
 
     // --- [INICIALIZA A APLICAÇÃO] -------------------------------------
