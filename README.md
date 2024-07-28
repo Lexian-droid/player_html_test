@@ -15,6 +15,7 @@ This project displays information about songs playing on Icecast/Shoutcast radio
 * Responsive design for mobile devices.
 * Now available as a Progressive Web App (PWA) for enhanced user experience!
 * Support for multiple radio stations
+* Auto-play after the first click on the screen.
 
 ## Installation
 
